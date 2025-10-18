@@ -66,7 +66,6 @@ html, body {
 }
 
 .hero-section {
-    /* background-color: #ff0000; */
     position: relative;
     margin-top: 70px;
     height: 100vh;
@@ -116,7 +115,6 @@ html, body {
 .about-us {
     height: 85vh;
     width: 100%;
-    /* background-color: blueviolet; */
     padding: 50px 140px;
 }
 
@@ -169,7 +167,6 @@ html, body {
 .menu {
     min-height: 100vh;
     width: 100%;
-    /* background-color: green; */
     padding: 50px 140px;
 }
 
@@ -183,8 +180,6 @@ html, body {
 
 .cards {
     height: 600px;
-    width: 100%;
-    /* background-color: red; */
     display: grid;
     grid-template-columns: 45% 45%;
     grid-template-rows: 30% 30% 30%;
@@ -196,7 +191,6 @@ html, body {
 .card {
     height: 100%;
     width: 100%;
-    /* background-color: yellow; */
     border: 1px solid black;
     display: flex;
     align-items: center;
@@ -237,26 +231,163 @@ html, body {
 }
 
 .carousel {
-    height: 90vh;
-    width: 100%;
-    padding: 50px 140px;
-    background-color: aqua;
-}
-
-.gallery {
     height: 100vh;
     width: 100%;
     padding: 50px 140px;
-    background-color: rgb(132, 0, 255);
+}
+
+.carousel-part {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.carousel-wrapper {
+    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Image container */
+.carousel-imgg {
+  width: 100%; /* adjust as needed */
+  height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Arrow buttons OUTSIDE image */
+.carousel-btn {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 15px;
+  margin: 0 20px; /* space outside image */
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Dots below the image */
+.carousel-dots {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.carousel-dots .dot {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin: 0 6px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-dots .dot.active {
+  background-color: rgb(255, 255, 255);
+}
+
+.gallery {
+    min-height: 100vh;
+    width: 100%;
+    padding: 50px 140px;
+}
+
+.gallery .headings {
+    margin-bottom: 60px;
+}
+
+.gallery-part {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    overflow: hidden;
+}
+
+.first {
+    width: 50%;
+}
+
+.second {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.third {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .find-us {
     height: 90vh;
     width: 100%;
     padding: 50px 140px;
-    background-color: rgb(255, 0, 234);
 }
 
+.find-uscontent {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 25px;
+}
+
+.find-uscontent .left {
+    width: 40%;
+}
+
+.location-dets .left-dets {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.location-dets .left-dets i {
+    font-size: 30px;
+}
+.find-uscontent .right {
+    height: 400px;
+    width: 50%;
+}
+
+.find-uscontent .right img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 .footer {
     height: 200px;
     width: 100%;
