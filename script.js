@@ -2,7 +2,7 @@
     './images/menu1.jpg',
     './images/menu2.jpg',
     './images/menu3.jpg',
-    // add more images here
+    './images/menu4.jpg',
   ];
 
   let currentIndex = 0;
@@ -12,7 +12,6 @@
   const nextBtn = document.querySelector('.carousel-btn.next');
   const dotsContainer = document.getElementById('carousel-dots');
 
-  // Create dots
   images.forEach((_, index) => {
     const dot = document.createElement('span');
     dot.classList.add('dot');
@@ -27,7 +26,6 @@
   const updateCarousel = () => {
     imageElement.src = images[currentIndex];
 
-    // Update dots
     const dots = document.querySelectorAll('.dot');
     dots.forEach((dot, i) => {
       dot.classList.toggle('active', i === currentIndex);
@@ -44,5 +42,4 @@
     updateCarousel();
   });
 
-  // In case you need to update again on load
   updateCarousel();

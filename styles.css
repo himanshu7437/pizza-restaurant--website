@@ -16,14 +16,15 @@ html, body {
     position: relative;
     min-height: 100vh;
     width: 100%;
+    margin: 0 auto;
 }
 
 .header {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     position: fixed;
     top: 0;
     left: 0;
-    height: 70px;
+    height: 6.5vw;
     width: 100%;
     display: flex;
     align-items: center;
@@ -33,18 +34,18 @@ html, body {
 }
 
 .header h1{
-    font-size: 30px;
+    font-size: 2.5vw;
 }
 
 .nav-items {
     display: flex;
     align-items: center;
-    gap: 45px;
+    gap: 4vw;
 }
 
 .nav-items a {
     text-decoration: none;
-    font-size: 19px;
+    font-size: 1.2vw;
     text-transform: uppercase;
     color: white;
 }
@@ -52,7 +53,7 @@ html, body {
 .nav-socials {
     display: flex;
     align-items: center;
-    gap: 23px;
+    gap: 1.5vw;
 }
 
 .nav-socials a {
@@ -62,15 +63,13 @@ html, body {
 .nav-socials a i {
     color: white;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.5vw;
 }
 
 .hero-section {
     position: relative;
-    margin-top: 70px;
     height: 100vh;
     width: 100%;
-    padding: 140px 120px;
     background-image: url(./images/pizza.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -79,21 +78,21 @@ html, body {
 }
 
 .hero-section h1 {
-    font-size: 80px;
+    font-size: 6.2vw;
 }
 
 .bottom-border {
     margin-top: 25px;
-    height: 7px;
+    height: 5px;
     width: 30%;
     background: red;
 }
 
 .hero-section p {
     margin-top: 30px;
-    width: 33%;
+    width: 35%;
     color: #efefef;
-    font-size: 17px;
+    font-size: 1.2vw;
 }
 
 .hero-section .overlay {
@@ -109,50 +108,58 @@ html, body {
 
 .hero-content {
     position: relative;
+    top: 30%;
+    left: 10%;
     z-index: 2;
 }
 
 .about-us {
     height: 85vh;
     width: 100%;
-    padding: 50px 140px;
+    padding: 4vw 6vw;
 }
 
 .headings {
+    height: 7vw;
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 10px;
+    gap: .6vw;
 }
 
 .headings h1 {
-    font-size: 40px;
+    font-size: 3.2vw;
     text-transform: uppercase;
 }
 
 .h-border {
-    height: 5px;
-    width: 24%;
+    height: 4px;
+    width: 27%;
     align-content: center;
     background-color: red;
 }
 
 .about-desc {
+    height: 60vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 40px 50px;
+    padding: 4vw 6vw;
+    overflow: hidden;
 }
 
 .left {
-    width: 45%;
+    background: #000;
+    width: 50%;
+    overflow: hidden;
 }
 
 .left p {
     width: 100%;
     color: #efefef;
-    font-size: 19px;
+    font-size: 1.3vw;
     line-height: 1.3;
+    padding: 5px;
 }
 
 .right {
@@ -162,39 +169,40 @@ html, body {
 .right img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .menu {
-    min-height: 100vh;
     width: 100%;
-    padding: 50px 140px;
+    padding: 4vw 6vw;
 }
 
 .menu p {
     width: 100%;
     color: #efefef;
-    font-size: 19px;
+    font-size: 1.3vw;
     line-height: 1.3;
-    margin: 35px 0px;
+    margin: 2vw 0px;
 }
 
 .cards {
-    height: 600px;
+    width: 100%;
     display: grid;
     grid-template-columns: 45% 45%;
     grid-template-rows: 30% 30% 30%;
     align-content: center;
     justify-content: space-evenly;
-    gap: 20px;
+    gap: 1vw;
 }
 
 .card {
     height: 100%;
     width: 100%;
-    border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 2px;
 }
 
 .card-left {
@@ -205,25 +213,27 @@ html, body {
 .card-left img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .card-right {
     height: 100%;
     width: 55%;
     display: flex;
-    justify-content: center;
+    justify-content: top;
     flex-direction: column;
-    gap: 5px;
+    gap: .2vw;
 }
 
 .card-right h1 {
     color: #F2C94C;
-    font-size: 17px;
+    font-size: 1.3vw;
     text-transform: uppercase;
 }
 
 .card-right p {
-    font-size: 15px;
+    font-size: .95vw;
 }
 
 .card-right h1, .card-right p {
@@ -233,7 +243,7 @@ html, body {
 .carousel {
     height: 100vh;
     width: 100%;
-    padding: 50px 140px;
+    padding: 4vw 6vw;
 }
 
 .carousel-part {
@@ -241,77 +251,76 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 1vw;
 }
 
 .carousel-wrapper {
     width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Image container */
+
 .carousel-imgg {
-  width: 100%; /* adjust as needed */
-  height: 500px;
-  overflow: hidden;
-  border-radius: 10px;
+    width: 80%; 
+    height: 450px;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .carousel img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
-/* Arrow buttons OUTSIDE image */
 .carousel-btn {
-  background-color: rgba(0, 0, 0, 0.5);
-  border: none;
-  color: white;
-  font-size: 2rem;
-  padding: 15px;
-  margin: 0 20px; /* space outside image */
-  cursor: pointer;
-  border-radius: 50%;
-  transition: background-color 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 15px;
+    margin: 0 20px; 
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
 }
 
 .carousel-btn:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Dots below the image */
 .carousel-dots {
-  margin-top: 15px;
-  text-align: center;
+    margin-top: 15px;
+    text-align: center;
 }
 
 .carousel-dots .dot {
-  display: inline-block;
-  height: 12px;
-  width: 12px;
-  margin: 0 6px;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    margin: 0 6px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .carousel-dots .dot.active {
-  background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
 }
 
 .gallery {
     min-height: 100vh;
     width: 100%;
-    padding: 50px 140px;
+    padding: 4vw 6vw;
 }
 
 .gallery .headings {
-    margin-bottom: 60px;
+    margin-bottom: 2vw;
 }
 
 .gallery-part {
@@ -350,32 +359,39 @@ img {
 }
 
 .find-us {
-    height: 90vh;
+    height: 100vh;
     width: 100%;
-    padding: 50px 140px;
+    padding: 4vw 6vw;
 }
 
 .find-uscontent {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 35px 25px;
+    padding: 2vw 1.5vw;
 }
 
 .find-uscontent .left {
     width: 40%;
 }
 
+.find-uscontent .left p {
+    font-size: 1.3vw;
+    color: #efefef;
+    padding: 5px;
+    line-height: 1.4;
+}
+
 .location-dets .left-dets {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 1.5vw;
     margin-top: 30px;
     margin-left: 10px;
 }
 
 .location-dets .left-dets i {
-    font-size: 30px;
+    font-size: 2.4vw;
 }
 .find-uscontent .right {
     height: 400px;
@@ -389,21 +405,23 @@ img {
     object-position: center;
 }
 .footer {
+    background-color: burlywood;
     height: 200px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 100px;
-    padding-right: 250px;
+    padding: 5vw 6vw;
+    padding-right: 15vw;
 }
 
 .footer i {
-    font-size: 80px;
+    font-size: 7vw;
     font-weight: 900;
 }
 
 .footer .left-dets {
+    background-color: aquamarine;
     display: flex;
     align-items: left;
     flex-direction: column;
@@ -417,7 +435,7 @@ img {
 }
 
 .mail i {
-    font-size: 40px;
+    font-size: 3vw;
 }
 
 .contact {
@@ -427,9 +445,9 @@ img {
 }
 
 .contact i {
-    font-size: 40px;
+    font-size: 3vw;
 }
 
 .contacts h3 {
-    font-size: 15px;
+    font-size: 1.3vw;
 }
