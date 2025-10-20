@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400..900&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Ruda", sans-serif;
 }
 
 html,
@@ -11,6 +14,16 @@ body {
   background-color: black;
   color: white;
   overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background: rgb(31, 31, 31);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #b3b2b2;
+  border-radius: 20px;
 }
 
 .container {
@@ -453,8 +466,8 @@ img {
 }
 
 @media (max-width: 600px) {
+
   .header {
-    background-color: rgb(255, 0, 0);
     height: 9vh;
     padding: 30px 40px;
   }
@@ -465,9 +478,9 @@ img {
 
   .nav-items {
     position: absolute;
-    top: 12vh;
+    top: 9vh;
     left: 0;
-    background-color: black;
+    background-color: rgb(25, 24, 24);
     width: 100%;
     display: none;
     flex-direction: column;
@@ -475,6 +488,7 @@ img {
     gap: 6vw;
     z-index: 1001;
     padding-bottom: 12px;
+    padding-top: 12px;
   }
 
   .nav-items a {
@@ -561,7 +575,6 @@ img {
   }
 
   .menu {
-    background: rgb(255, 111, 0);
     padding: 5vw auto;
   }
 
