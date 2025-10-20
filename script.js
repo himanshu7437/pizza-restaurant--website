@@ -3,6 +3,8 @@
     './images/menu2.jpg',
     './images/menu3.jpg',
     './images/menu4.jpg',
+    './images/menu5.jpg',
+    './images/menu6.jpg',
   ];
 
   let currentIndex = 0;
